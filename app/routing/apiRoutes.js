@@ -9,15 +9,8 @@ var friendsArray = require("../data/friends")
 // Routes
 // =============================================================
 module.exports = function (my_app) {
-    // Basic route that sends the user first to the AJAX Page
-    my_app.get("/", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/home.html"));
-    });
 
-    my_app.get("/survey", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/survey.html"));
-    });
-
+    // used for dumping the friends in json format to the browser
     my_app.get("/api/friends", function (req, res) {
         return res.json(friendsArray);
     });
@@ -35,6 +28,7 @@ module.exports = function (my_app) {
         var diffArray = [];
         console.log("friendsArray.length: " + friendsArray.length);
 
+
         for (i = 0; i < friendsArray.length; i++) {
             var diff = 0
             console.log("friend array scores " +friendsArray[i].scores.length);
@@ -45,6 +39,10 @@ module.exports = function (my_app) {
             console.log(diffArray);
         }
 
+        // find the min value of the scores array - lowest value means the best match
+        // if there is a tie it will pick the first person
+        console.log(Math.min(...diffArray));
+        
         var maxIndex = diffArray.indexOf(Math.min(...diffArray));
         console.log(maxIndex);
 
@@ -52,6 +50,6 @@ module.exports = function (my_app) {
 
         friendsArray.push(newFriend);
 
-        res.json(newFriend);
+        res.json(friendsArray[maxIndex]);
     });
 }
