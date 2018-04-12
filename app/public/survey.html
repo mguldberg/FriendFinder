@@ -5,15 +5,46 @@
     <meta charset="UTF-8">
     <title>Hot Restaurant</title>
     <!-- Latest compiled and minified CSS & JS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
 
 </head>
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container">
+        <!-- The Modal -->
+        <div class="modal fade" id="my-friends-modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">
+                            <strong>We found a new friend for you....</strong>
+                        </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body ">
+                        <h4 id="my-friends-name"></h4>
+                        <div class="text-center">
+                            <img class="img-fluid" id="my-friends-photo" src="#">
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">
@@ -25,7 +56,6 @@
                     <div class="panel-body">
                         <h1>About You</h1>
                         <form role="form">
-
                             <div class="form-group">
                                 <label for="name">Name (Required)</label>
                                 <input type="text" class="form-control" id="name">
@@ -38,45 +68,122 @@
 
                             <div>
                                 <div class="input-group" id="record">
-                                    What is the your favorite number?
-
+                                    What your favorite color?
                                     <select class="custom-select" id="question-1">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                        <option value=""></option>
+                                        <option value="1">Gold</option>
+                                        <option value="2">Scarlet</option>
+                                        <option value="3">Blue</option>
+                                        <option value="4">Orange</option>
+                                        <option value="5">Green</option>
                                     </select>
                                 </div>
                                 <div class="input-group" id="record">
-                                    What is the your favorite number?
-
+                                    What is the best Time Zone?
                                     <select class="custom-select" id="question-2">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
+                                        <option value=""></option>
+                                        <option value="1">Eastern</option>
+                                        <option value="2">Central</option>
+                                        <option value="3">Mountain</option>
+                                        <option value="4">Pacific</option>
+                                        <option value="5">AK/HI</option>
                                     </select>
                                 </div>
                                 <div class="input-group" id="record">
-                                    What is the your favorite number?
+                                    What is the best State?
 
                                     <select class="custom-select" id="question-3">
-                                        <option value=1>1</option>
-                                        <option value=2>2</option>
-                                        <option value=3>3</option>
-                                        <option value=4>4</option>
-                                        <option value=5>5</option>
+                                        <option value=""></option>
+                                        <option value="1">MI</option>
+                                        <option value="2">MN</option>
+                                        <option value="3">OH</option>
+                                        <option value="4">IL</option>
+                                        <option value="5">IA</option>
+                                    </select>
+                                </div>
+                                <div class="input-group" id="record">
+                                    What is the best color?
+                                    <select class="custom-select" id="question-4">
+                                        <option value=""></option>
+                                        <option value="1">Red</option>
+                                        <option value="2">Blue</option>
+                                        <option value="3">Scarlet</option>
+                                        <option value="4">Maroon</option>
+                                        <option value="5">Gold</option>
+                                    </select>
+                                </div>
+                                <div class="input-group" id="record">
+                                    What is the best football trophy?
+                                    <select class="custom-select" id="question-5">
+                                        <option value=""></option>
+                                        <option value="1">Paul Bunyan Statue</option>
+                                        <option value="2">Little Brown Jug</option>
+                                        <option value="3">Illibuck</option>
+                                        <option value="4">Paul Bunyan's Axe</option>
+                                        <option value="5">Floyd of Rosedale</option>
+                                    </select>
+                                </div>
+                                <div class="input-group" id="record">
+                                    I love the University of Michigan.
+                                    <select class="custom-select" id="question-6">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <div class="input-group" id="record">
+                                    I love the University of Michigan State.
+                                    <select class="custom-select" id="question-7">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <div class="input-group" id="record">
+                                    I love the University of Ohio State.
+                                    <select class="custom-select" id="question-8">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <div class="input-group" id="record">
+                                    I love the University of Minnesota.
+                                    <select class="custom-select" id="question-9">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
+                                    </select>
+                                </div>
+                                <div class="input-group" id="record">
+                                    I love the University of Illinois.
+                                    <select class="custom-select" id="question-10">
+                                        <option value=""></option>
+                                        <option value="1">1 (Strongly Disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Strongly Agree)</option>
                                     </select>
                                 </div>
                             </div>
                         </form>
                         <br>
                         <div class="text-right">
-
                             <button type="submit" id="submit-btn" class="btn btn-danger btn-lg">
-                                <span class="glyphicon glyphicon-fire"></span> Submit</button>
+                                <span class="fa-submit"></span> Submit</button>
                         </div>
                     </div>
                 </div>
@@ -94,12 +201,18 @@
 
             var newFriend = {
                 name: $("#name").val().trim(),
-                phone: $("#photo").val().trim(),
+                photo: $("#photo").val().trim(),
                 scores: [
                     $("#question-1").val(),
                     $("#question-2").val(),
                     $("#question-3").val(),
-                    5, 3, 2, 4, 2, 4, 3,
+                    $("#question-4").val(),
+                    $("#question-5").val(),
+                    $("#question-6").val(),
+                    $("#question-7").val(),
+                    $("#question-8").val(),
+                    $("#question-9").val(),
+                    $("#question-10").val(),
                 ]
 
             };
@@ -109,10 +222,22 @@
             $.post("/api/friends", newFriend)
                 .then(function (data) {
                     console.log(data);
-                    alert("Adding friend...");
+                    console.log("in api/friends reply")
+
+                    console.log(data)
+                    console.log(data.photo);
+                    $("#my-friends-name").text(data.name);
+                    $("#my-friends-photo").attr("src", data.photo);
+                    $("#my-friends-modal").modal('toggle');
+
                 });
         });
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

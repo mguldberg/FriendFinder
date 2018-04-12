@@ -1,4 +1,4 @@
-// Dependencies
+    // Dependencies
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -20,7 +20,7 @@ martin_app.use(bodyParser.json());
 // ================================================================================
 
 require("./app/routing/apiRoutes")(martin_app);
-// require("./app/routing/htmlRoutes")(martin_app);
+require("./app/routing/htmlRoutes")(martin_app);
 
 // =============================================================================
 // LISTENER
@@ -33,7 +33,4 @@ martin_app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
 });
 
-// Search for Specific Character (or all characters) - provides JSON
-martin_app.get("/api/_dump", function (req, res) {
-    return res.json(customers);
-});
+
