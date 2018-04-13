@@ -1,0 +1,175 @@
+    1  ls
+    2  ls -al
+    3  ls -al | grep OneDrive
+    4  exit
+    5  cd Documents/uOfMinnesotaBootCampHomeworks/FriendFinder/
+    6  node server.js 
+    7  ode server.js 
+    8  node server.js 
+    9  cd ../../fullStackWeek1/week7-activities/
+   10  ls -al
+   11  node server.js 
+   12  node server.js 
+   13  node server.js 
+   14  node server.js 
+   15  node server.js 
+   16  node server.js 
+   17  node server.js 
+   18  node server.js 
+   19  node server.js 
+   20  node server.js 
+   21  node server.js 
+   22  node server.js 
+   23  node server.js 
+   24  node server.js 
+   25  node server.js 
+   26  node server.js 
+   27  node server.js 
+   28  node server.js 
+   29  node server.js 
+   30  node server.js 
+   31  grep visits *
+   32  grep visits *
+   33  grep visits *
+   34  node server.js 
+   35  cd ../
+   36  grep -ir 'document.on'
+   37  grep -ir 'document.on' *
+   38  grep -ir document *
+   39  grep -ir document * | grep ready
+   40  cd week7-activities/
+   41  node server.js 
+   42  node server.js 
+   43  cd ../../fullStackWeek1/MINSTP201802FSF5-FT-Class-Repository-FSF-FT/
+   44  git pull
+   45  cd 
+   46  cd
+   47  cd Documents/fullStackWeek1/MINSTP201802FSF5-FT-Class-Repository-FSF-FT/01-class-content/14-handlebars/01-Activities/01-ExpressCalculator/
+   48  cd Unsolved/
+   49  ls al
+   50  ls -al
+   51  node expressCalculator.js 
+   52  npm install
+   53  node expressCalculator.js 
+   54  node expressCalculator.js 
+   55  node expressCalculator.js 
+   56  node expressCalculator.js 
+   57  node expressCalculator.js 
+   58  node expressCalculator.js 
+   59  node expressCalculator.js 
+   60  ls -al
+   61  cd ../../../../13-express/
+   62  ls -al
+   63  cd 01-Activities/
+   64  grep -ir res.send *
+   65  cd
+   66  cd 
+   67  cd Documents/uOfMinnesotaBootCampHomeworks/FriendFinder/
+   68  ls -al
+   69  cd app/routing/
+   70  ls -al
+   71  cp apiRoutes.js htmlRoutes.js
+   72  ls -al
+   73  cd ../../
+   74  node server.js 
+   75  cd ../../fullStackWeek1/MINSTP201802FSF5-FT-Class-Repository-FSF-FT/01-class-content/14-handlebars/01-Activities/03-SeinfeldApp/
+   76  ls -al
+   77  npm install
+   78  cd Solved/
+   79  npm install
+   80  node server.js 
+   81  node server.js 
+   82  source schema.sql
+   83  which source
+   84  node server.js 
+   85  cd ../../04-HandlebarsLunch/
+   86  ls -al
+   87  npm install -g nodemon
+   88  which telnet
+   89  man vi
+   90  cd
+   91  cd Documents/
+   92  ls -al
+   93  cd uOfMinnesotaBootCampHomeworks/
+   94  ls -al
+   95  cd FriendFinder/
+   96  ls -al
+   97  cd 
+   98  cd Documents/fullStackWeek1/MINSTP201802FSF5-FT-Class-Repository-FSF-FT/01-class-content/14-handlebars/01-Activities/04-HandlebarsLunch/
+   99  ls -al
+  100  npm install
+  101  node server.js 
+  102  node server.js 
+  103  node server.js 
+  104  node server.js 
+  105  node server.js 
+  106  nodemon server.js 
+  107  q
+  108  cd ../05-BenAndJerrys/
+  109  ls -al
+  110  cd Solved/
+  111  ls -al
+  112  cd ../
+  113  ls -al
+  114  mkdir views/layouts
+  115  mkdir views
+  116  mkdir views/layouts
+  117  cp ../04-HandlebarsLunch/views/layouts/main.handlebars views/layouts/
+  118  cp ../04-HandlebarsLunch/views/index.handlebars views/
+  119  cp ../04-HandlebarsLunch/server.js .
+  120  npm init
+  121  npm install express
+  122  npm install express-handlebars
+  123  ls -al
+  124  nodemon server.js 
+  125  nodemon server.js 
+  126  cd ../06-HandlebarsAnimals/
+  127  cd Unsolved/
+  128  ls -al
+  129  npm install
+  130  ls -al
+  131  nodemon server.js 
+  132  cd 
+  133  cd Documents/uOfMinnesotaBootCampHomeworks/
+  134  cd FriendFinder/
+  135  ls -al
+  136  node server.js 
+  137  node server.js 
+  138  node server.js 
+  139  node server.js 
+  140  node server.js 
+  141  node server.js 
+  142  node server.js 
+  143  node server.js 
+  144  node server.js 
+  145  node server.js 
+  146  node server.js 
+  147  node server.js 
+  148  node server.js 
+  149  node server.js 
+  150  node server.js 
+  151  node server.js 
+  152  node server.js 
+  153  node server.js 
+  154  node server.js 
+  155  node server.js 
+  156  node server.js 
+  157  node server.js 
+  158  nodemon server.js 
+  159  nodemon server.js 
+  160  nodemon server.js 
+  161  node server.js 
+  162  node server.js 
+  163  node server.js 
+  164  node server.js 
+  165  node server.js 
+  166  node server.js 
+  167  node server.js 
+  168  node server.js 
+  169  node server.js 
+  170  git add .
+  171  git commit -m "completed assignment"
+  172  git push
+  173  git push
+  174  node server.js 
+  175  history > log.txt
